@@ -64,19 +64,19 @@ And there's no rule that says it can only be put on hats!
 We'd love you to share your designs in an issue in this repository, or tag [@BitBoxSwiss](https://twitter.com/BitBoxSwiss) on Twitter or [Instagram](https://www.instagram.com/bitboxswiss/) if you post about them!
 
 
-## Keychain
+## 3D printing
+
+### [Keychain](3d-printing/keychain/)
 
 At BitBox, we designed some nice "open source everything" keychains that you might get for free at a Bitcoin conference from us.
 
 Of course, you can also print it yourself with a 3d printer. 
-Simply slice the STL design file in your slicer and add a filament color change at the appropriate height. 
-If you print with a layer height of 0.25 mm, the two topmost layers should be printed using white filament.
+The design is split into a base and its letters, so the letters print in a second color: light letters on a dark base, or dark letters on a light base.
+Its folder has the STL files, a ready-to-print OrcaSlicer project, and print instructions.
 
 The `o` character acts as the hole for a keyring.
 
-<img src="keyring-open-source-everything-slicer.png" alt="keyring 'open source everything'" width="500">
-
-- [keyring-open-source-everything.stl](keyring-open-source-everything.stl)
+<img src="3d-printing/keychain/slicer.png" alt="keychain 'open source everything'" width="500">
 
 
 ## Get the baseball cap
