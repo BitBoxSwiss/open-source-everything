@@ -78,6 +78,13 @@ The `o` character acts as the hole for a keyring.
 
 <img src="3d-printing/keychain/slicer.png" alt="keychain 'open source everything'" width="500">
 
+### [Wall sign](3d-printing/wall-sign/)
+
+The same design scaled up into a wall sign 27 cm wide, as large as a 256 mm build plate allows, with two keyholes in the back to hang it on nails.
+Its folder has the STL files, a ready-to-print OrcaSlicer project, and print and hanging instructions.
+
+<img src="3d-printing/wall-sign/slicer.png" alt="wall sign 'open source everything' on the build plate" width="500">
+
 
 ## Get the baseball cap
 
