@@ -8,7 +8,7 @@ The `o` of "open" acts as the hole for the key ring.
 
 ## Files
 
-- [keychain.3mf](keychain.3mf): an OrcaSlicer project with both versions, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
+- [keychain-orcaslicer.3mf](keychain-orcaslicer.3mf): an OrcaSlicer project with both versions, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
   By the slicer's estimate, they take about 22 and 20 minutes, and 6.2 and 5.4 g of filament.
 - Components:
   - [keychain-base.stl](keychain-base.stl): the base, 62 x 33 x 2.8 mm, shared by both versions.
@@ -26,7 +26,7 @@ Dark filament easily covers a light base in fewer layers. Dark text also looks b
 
 ## Printing
 
-The 3MF file (OrcaSlicer) already has all the settings below, with one plate per version.
+The OrcaSlicer 3MF file already has all the settings below, with one plate per version.
 It uses the Generic PLA profiles; swap in your own calibrated ones if you have them.
 Settings that apply only to the letters are set on the letters part.
 
@@ -37,21 +37,27 @@ The base ends and the letters start at 2.8 mm.
 
 ## Settings
 
-- **0.16 mm layers** (the "0.16mm Optimal" process) and a textured PEI plate.
+- **0.16 mm layers** and a textured PEI plate.
+  Compared with 0.20 mm, the light letters get seven layers instead of six, and the base's rounded edges print in finer steps.
 - **Arachne wall generator.**
   The dot on the `i` is too small for the default Classic wall generator, which prints it as an empty outline.
   Arachne fills it.
 - **4 walls and 100% infill**, so the keychain is solid.
-- **Prime tower off.**
-  All the letter layers sit above all the base layers, so each version needs only one filament change, and the AMS purges it through the chute.
-- **"Only one wall on top surfaces" off, except on the letters.**
+- **"Only one wall on top surfaces" off, except on the letters** ("Single perimeter on top surfaces" in PrusaSlicer).
   Off, the base's top prints as one even pass.
   On the letters, their tops print as an outline and fill rather than as loops with small pits where the loops meet.
-- **The letters' top fill direction ("Solid infill direction"): 75 degrees for the light letters, 165 for the dark.**
+- **The letters' top layer at 165 degrees,** as in the image below.
   At this angle the top layer covers tiny holes that the walls leave where strokes narrow, such as at the top of the `g`.
-  The two settings lay the top lines the same way.
-  Orca turns the solid fill direction a quarter turn from one layer to the next, and the dark letters' top layer is three layers lower than the light letters' top, an odd number, so the same setting would lay its lines crosswise.
-  165 is 75 plus that quarter turn.
+  Slicers turn the solid infill a quarter turn from one layer to the next, so the solid infill direction that gives this angle is either 165 or 75 degrees, depending on whether the letters' top layer is odd or even.
+  That can differ with the layer height and between the two versions, so check the top layer in the preview.
+
+  <img src="top-layer.png" alt="The light letters' top layer in the slicer preview, its lines at 165 degrees" width="500">
+
+### OrcaSlicer only
+
+- **The "0.16mm Optimal" process** for the 0.16 mm layers.
+- **Prime tower off.**
+  All the letter layers sit above all the base layers, so each version needs only one filament change, and the AMS purges it through the chute.
 - **"Precise wall" off on the letters.**
   The crossbar of the `e` is only two lines wide.
   With precise wall on, the two lines are laid edge to edge, and with some filaments that left a thin slit down the middle in testing.
