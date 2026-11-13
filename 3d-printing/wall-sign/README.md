@@ -8,7 +8,7 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
 
 ## Files
 
-- [wall-sign.3mf](wall-sign.3mf): an OrcaSlicer project, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
+- [wall-sign-orcaslicer.3mf](wall-sign-orcaslicer.3mf): an OrcaSlicer project, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
   By the slicer's estimate, it takes about 3 hours 25 minutes and 130 g of filament.
 - [wall-sign-base.stl](wall-sign-base.stl) and [wall-sign-letters.stl](wall-sign-letters.stl): the base and the letters, turned 59 degrees as they sit on the plate.
 
@@ -17,7 +17,7 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
 The sign prints turned 59 degrees, which lets it use the plate's diagonal; square to the plate it would stop at 248 mm.
 Centered on the plate, it stays clear of the P1S's excluded front-left corner and of the line the printer draws along the front edge to prime the nozzle.
 
-The 3MF file uses the stock "0.20mm Standard" process and the Generic PLA profiles, with three changes:
+The OrcaSlicer 3MF file uses the stock "0.20mm Standard" process and the Generic PLA profiles, with three changes:
 
 - **No brim.** The automatic brim ran out to the plate's edges and over the priming line.
 - **Prime tower off.** All the letter layers sit above all the base layers, so the sign needs only one filament change.
