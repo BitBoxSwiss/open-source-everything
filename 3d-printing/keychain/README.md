@@ -10,6 +10,7 @@ The `o` of "open" acts as the hole for the key ring.
 
 - [keychain-orcaslicer.3mf](keychain-orcaslicer.3mf): an OrcaSlicer project with both versions, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
   By the slicer's estimate, they take about 22 and 20 minutes, and 6.2 and 5.4 g of filament.
+- [keychain-prusaslicer.3mf](keychain-prusaslicer.3mf): a PrusaSlicer project with both versions on two beds, ready to print on an Original Prusa MK4 (Input Shaper) with a 0.4 mm nozzle, using the "0.15mm STRUCTURAL" process and a manual color change at 2.9 mm.
 - Components:
   - [keychain-base.stl](keychain-base.stl): the base, 62 x 33 x 2.8 mm, shared by both versions.
   - [keychain-letters-light.stl](keychain-letters-light.stl): 1.12 mm letter option for light colored filaments.
