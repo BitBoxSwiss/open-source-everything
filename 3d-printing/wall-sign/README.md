@@ -17,15 +17,26 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
 The sign prints turned 59 degrees, which lets it use the plate's diagonal; square to the plate it would stop at 248 mm.
 Centered on the plate, it stays clear of the P1S's excluded front-left corner and of the line the printer draws along the front edge to prime the nozzle.
 
-The OrcaSlicer 3MF file uses the stock "0.20mm Standard" process and the Generic PLA profiles, with three changes:
+The OrcaSlicer 3MF file already has all the settings below.
+It uses the Generic PLA profiles; swap in your own calibrated ones if you have them.
 
-- **No brim.** The automatic brim ran out to the plate's edges and over the priming line.
-- **Prime tower off.** All the letter layers sit above all the base layers, so the sign needs only one filament change.
-- **Solid infill direction at 14 degrees instead of 45.** With the sign turned on the plate, the stock angle ran the top surfaces' lines nearly upright across the text.
-  At 14, the top lines of the base and the letters run parallel, rising at 45 degrees to the text.
+## Settings
+
+- **No brim.**
+  OrcaSlicer's automatic brim ran out to the plate's edges and over the priming line.
+- **Top lines rising at 45 degrees to the text,** on both the base and the letters.
+  With the sign turned on the plate, the usual setting of 45 degrees runs them nearly along the text or upright across it.
+  Slicers turn the solid infill a quarter turn from one layer to the next, so the solid infill direction that gives this angle is either 14 or 104 degrees, depending on whether the top layer is odd or even.
+  That can differ with the layer height, so check the top layers of the base and the letters in the preview.
 
 Layer height shows mostly on the chamfers.
 The base's chamfer steps once per layer, while the chamfer on the letters' top edges shows about four steps at 0.16 mm layers and two at 0.20 mm.
+
+### OrcaSlicer only
+
+- **The stock "0.20mm Standard" process.**
+- **Prime tower off.**
+  All the letter layers sit above all the base layers, so the sign needs only one filament change, and the AMS purges it through the chute.
 
 ## Hanging
 
