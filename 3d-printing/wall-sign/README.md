@@ -10,7 +10,12 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
 
 - [wall-sign-orcaslicer.3mf](wall-sign-orcaslicer.3mf): an OrcaSlicer project, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
   By the slicer's estimate, it takes about 3 hours 25 minutes and 130 g of filament.
-- [wall-sign-base.stl](wall-sign-base.stl) and [wall-sign-letters.stl](wall-sign-letters.stl): the base and the letters, turned 59 degrees as they sit on the plate.
+- Components:
+  - [wall-sign-base.stl](wall-sign-base.stl): the base, 271.5 x 146 x 11.2 mm.
+  - [wall-sign-letters.stl](wall-sign-letters.stl): the letters, 4.48 mm high.
+- Combined (base plus letters): [wall-sign-combined.stl](wall-sign-combined.stl).
+
+The STLs are turned 59 degrees, as the sign sits on the plate.
 
 ## Printing
 
@@ -19,6 +24,11 @@ Centered on the plate, it stays clear of the P1S's excluded front-left corner an
 
 The OrcaSlicer 3MF file already has all the settings below.
 It uses the Generic PLA profiles; swap in your own calibrated ones if you have them.
+
+With the component STLs, load the base and the letters as a single object of two parts, then apply the settings below.
+
+With the combined STL, it's up to you to set the layer where the color changes.
+The base ends and the letters start at 11.2 mm.
 
 ## Settings
 
