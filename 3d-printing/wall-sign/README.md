@@ -15,7 +15,7 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
   - [wall-sign-letters.stl](wall-sign-letters.stl): the letters, 4.48 mm high.
 - Combined (base plus letters): [wall-sign-combined.stl](wall-sign-combined.stl).
 
-The STLs are turned 59 degrees, as the sign sits on the plate.
+The STLs are square to the axes; the OrcaSlicer 3MF turns the sign 59 degrees on the plate.
 
 ## Printing
 
@@ -35,8 +35,9 @@ The base ends and the letters start at 11.2 mm.
 - **No brim.**
   OrcaSlicer's automatic brim ran out to the plate's edges and over the priming line.
 - **Top lines rising at 45 degrees to the text,** on both the base and the letters.
-  With the sign turned on the plate, the usual setting of 45 degrees runs them nearly along the text or upright across it.
+  With the sign turned 59 degrees on the plate, as in the OrcaSlicer 3MF, the usual setting of 45 degrees runs them nearly along the text or upright across it.
   Slicers turn the solid infill a quarter turn from one layer to the next, so the solid infill direction that gives this angle is either 14 or 104 degrees, depending on whether the top layer is odd or even.
+  Square to the plate, it is 45 or 135 degrees; at other angles, add the sign's turn to those.
   That can differ with the layer height, so check the top layers of the base and the letters in the preview.
 
 Layer height shows mostly on the chamfers.
