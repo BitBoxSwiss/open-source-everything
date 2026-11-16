@@ -10,6 +10,8 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
 
 - [wall-sign-orcaslicer.3mf](wall-sign-orcaslicer.3mf): an OrcaSlicer project, ready to print on a Bambu Lab P1S with a 0.4 mm nozzle.
   By the slicer's estimate, it takes about 3 hours 25 minutes and 130 g of filament.
+- [wall-sign-prusaslicer.3mf](wall-sign-prusaslicer.3mf): a PrusaSlicer project, ready to print on an Original Prusa MK4 (Input Shaper) with a 0.4 mm nozzle, with the sign scaled to 93% in X and Y to fit its plate (see [Smaller build plates](#smaller-build-plates)).
+  It uses the "0.20mm STRUCTURAL" process and a manual color change at 11.4 mm; by the slicer's estimate, it takes about 4 hours 20 minutes and 121 g of filament.
 - Components:
   - [wall-sign-base.stl](wall-sign-base.stl): the base, 271.5 x 146 x 11.2 mm.
   - [wall-sign-letters.stl](wall-sign-letters.stl): the letters, 4.48 mm high.
