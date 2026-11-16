@@ -49,6 +49,15 @@ The base's chamfer steps once per layer, while the chamfer on the letters' top e
 - **Prime tower off.**
   All the letter layers sit above all the base layers, so the sign needs only one filament change, and the AMS purges it through the chute.
 
+## Smaller build plates
+
+At full size, the sign needs a 256 mm build plate.
+On a 250 x 210 mm plate, such as the Prusa MK4's, it fits when scaled to 93% in X and Y and turned about 20 degrees.
+Keep Z at 100%, so the keyholes stay as deep and the letters still start at 11.2 mm.
+
+The hanging measurements below scale with it: nails 94.5 mm apart, each 48.3 mm below the top of the sign, the left one 57.0 mm in from the sign's left edge.
+The keyholes' slot for the nail shank narrows from 4.2 to 3.9 mm, and the pocket for its head from 10 to 9.3 mm, which still fits nail heads up to about 9 mm.
+
 ## Hanging
 
 Two nails, level and 101.6 mm (4 in) apart, each 51.9 mm below the top of the sign, the left one 61.3 mm in from the sign's left edge.
