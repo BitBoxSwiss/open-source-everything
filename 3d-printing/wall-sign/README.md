@@ -17,13 +17,13 @@ To enhance its presentation at this scale, the sign has chamfered edges: 3 mm on
   - [wall-sign-letters.stl](wall-sign-letters.stl): the letters, 4.48 mm high.
 - Combined (base plus letters): [wall-sign-combined.stl](wall-sign-combined.stl).
 
-The STLs are square to the axes; the OrcaSlicer 3MF turns the sign 59 degrees on the plate.
+The STLs are square to the axes; the OrcaSlicer 3MF rotates the sign 59 degrees on the plate.
 
 ## Printing
 
-On a 256 mm plate, the sign prints turned 59 degrees, which lets it use the plate's diagonal; square to the plate, it could be at most 248 mm wide.
+On a 256 mm plate, the sign prints rotated 59 degrees, which lets it use the plate's diagonal; square to the plate, it could be at most 248 mm wide.
 Centered on the plate, it stays clear of the P1S's excluded front-left corner and of the line the printer draws along the front edge to prime the nozzle.
-For other plates, [Plate sizes](#plate-sizes) gives the scale and turn.
+For other plates, [Plate sizes](#plate-sizes) gives the scale and rotation.
 
 The OrcaSlicer 3MF file already has all the settings below.
 It uses the Generic PLA profiles; swap in your own calibrated ones if you have them.
@@ -38,8 +38,8 @@ The base ends and the letters start at 11.2 mm.
 - **No brim.**
   OrcaSlicer's automatic brim ran out to the plate's edges and over the priming line.
 - **Top lines rising at 45 degrees to the text,** on both the base and the letters.
-  Slicers turn the solid infill a quarter turn from one layer to the next, so the solid infill direction that gives this angle is one of two, depending on whether the top layer is odd or even.
-  With the sign square to the plate, it is 45 or 135 degrees; with the sign turned, add the turn, counting clockwise as negative ([Plate sizes](#plate-sizes) lists both for each turn).
+  Slicers rotate the solid infill 90 degrees from one layer to the next, so the solid infill direction that gives this angle is one of two, depending on whether the top layer is odd or even.
+  With the sign square to the plate, it is 45 or 135 degrees; with the sign rotated, add the rotation, counting clockwise as negative ([Plate sizes](#plate-sizes) lists both for each rotation).
   Which of the two applies can change with the layer height, so check the top layers of the base and the letters in the preview.
 
 Layer height shows mostly on the chamfers.
@@ -54,11 +54,11 @@ The base's chamfer steps once per layer, while the chamfer on the letters' top e
 ## Plate sizes
 
 The STLs are full size and square to the axes.
-To fit a plate, scale them in X and Y and turn them as below.
+To fit a plate, scale them in X and Y and rotate them as below.
 Keep Z at 100%, so the keyholes stay as deep and the letters still start at 11.2 mm.
 Each row leaves at least 2.8 mm between the sign and the plate's edges, and the hanging measurements scale too (see [Hanging](#hanging)).
 
-| Plate (mm) | Scale (X and Y) | Turn | Solid infill direction |
+| Plate (mm) | Scale (X and Y) | Rotation | Solid infill direction |
 |---|---|---|---|
 | 360 x 360 | 142% | 59° counterclockwise | 14° or 104° |
 | 300 x 300 | 118% | 59° counterclockwise | 14° or 104° |
