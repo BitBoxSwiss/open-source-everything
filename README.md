@@ -72,11 +72,19 @@ At BitBox, we designed some nice "open source everything" keychains that you mig
 
 Of course, you can also print it yourself with a 3d printer. 
 The design is split into a base and its letters, so the letters print in a second color: light letters on a dark base, or dark letters on a light base.
-Its folder has the STL files, a ready-to-print OrcaSlicer project, and print instructions.
+Its folder has the STL files, ready-to-print projects for OrcaSlicer and PrusaSlicer, and print instructions.
 
 The `o` character acts as the hole for a keyring.
 
 <img src="3d-printing/keychain/slicer.png" alt="keychain 'open source everything'" width="500">
+
+### [Wall sign](3d-printing/wall-sign/)
+
+The same design scaled up into a wall sign 27 cm wide, as large as a 256 mm build plate allows, with two keyholes in the back to hang it on nails.
+Got a smaller printer, like the Prusa MK4? Scale it down a little, and it still fits.
+Its folder has the STL files, ready-to-print projects for OrcaSlicer and PrusaSlicer, and print and hanging instructions.
+
+<img src="3d-printing/wall-sign/slicer.png" alt="wall sign 'open source everything' on the build plate" width="500">
 
 
 ## Get the baseball cap
